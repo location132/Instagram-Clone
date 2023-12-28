@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter_application_1/feed.dart';
 
 class MainAppBar extends StatelessWidget {
   const MainAppBar({super.key});
@@ -27,6 +28,7 @@ class MainAppBar extends StatelessWidget {
           ),
         ],
       ),
+      body: const MainFeed(),
     );
   }
 }
