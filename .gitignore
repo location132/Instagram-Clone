@@ -37,3 +37,9 @@ ios/Pods/
 
 # macOS related
 macos/Pods/
+
+# .gitignore 파일에 추가
+linux/
+macos/
+windows/
+web/
