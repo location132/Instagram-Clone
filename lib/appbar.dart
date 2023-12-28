@@ -28,7 +28,12 @@ class MainAppBar extends StatelessWidget {
           ),
         ],
       ),
-      body: const MainFeed(),
+      body: ListView.builder(
+        itemCount: 100,
+        itemBuilder: (context, index) {
+          return const MainFeed();
+        },
+      ),
     );
   }
 }
