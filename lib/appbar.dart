@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 
-class appbar extends StatelessWidget {
-  const appbar({super.key});
+class MainAppBar extends StatelessWidget {
+  const MainAppBar({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         leading: IconButton(
-          icon: Icon(
+          icon: const Icon(
             CupertinoIcons.camera,
           ),
           onPressed: () {},
@@ -21,7 +21,7 @@ class appbar extends StatelessWidget {
         actions: [
           IconButton(
             onPressed: (() {}),
-            icon: Icon(
+            icon: const Icon(
               CupertinoIcons.paperplane,
             ),
           ),
