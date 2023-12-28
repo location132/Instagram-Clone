@@ -28,7 +28,7 @@ class _MainFeedState extends State<MainFeed> {
               },
               icon: Icon(
                 CupertinoIcons.heart,
-                color: isFavorite ? Colors.black : Colors.red,
+                color: !isFavorite ? Colors.black : Colors.red,
               ),
             ),
             IconButton(
