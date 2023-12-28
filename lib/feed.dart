@@ -2,9 +2,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class MainFeed extends StatefulWidget {
-  const MainFeed({
-    super.key,
-  });
+  const MainFeed({super.key, required this.imageUrl});
+
+  final String imageUrl;
 
   @override
   State<MainFeed> createState() => _MainFeedState();
@@ -17,9 +17,7 @@ class _MainFeedState extends State<MainFeed> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Image.network(
-          "https://i.ibb.co/YjjLCS7/cat.png",
-        ),
+        Image.network(widget.imageUrl),
         Row(
           children: [
             IconButton(
