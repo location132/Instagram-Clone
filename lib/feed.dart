@@ -1,10 +1,17 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class MainFeed extends StatelessWidget {
+class MainFeed extends StatefulWidget {
   const MainFeed({
     super.key,
   });
+
+  @override
+  State<MainFeed> createState() => _MainFeedState();
+}
+
+class _MainFeedState extends State<MainFeed> {
+  bool isFavorite = false;
 
   @override
   Widget build(BuildContext context) {
@@ -16,10 +23,14 @@ class MainFeed extends StatelessWidget {
         Row(
           children: [
             IconButton(
-              onPressed: () {},
-              icon: const Icon(
+              onPressed: () {
+                setState(() {
+                  isFavorite = !isFavorite;
+                });
+              },
+              icon: Icon(
                 CupertinoIcons.heart,
-                color: Colors.black,
+                color: isFavorite ? Colors.black : Colors.red,
               ),
             ),
             IconButton(
